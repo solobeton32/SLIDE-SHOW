@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#photos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#photos img {
+    position:absolute;
+    width:100%;
+    height: 400px;
+}

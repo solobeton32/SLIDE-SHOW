@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SLIDES DIAPORAMMA </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+	var images=["abidjan.jpg", "paris.jpg", "rome.jpg", "berlin.jpg", "yakro.jpg"];
+	var i=0;
+	function slid(){
+		document.getElementById("slide").src=images[i];
+		if(i<images.length - 1){
+			i++;
+		}else{
+			i=0;
+		}
+		setTimeout("slid()",2500);	
+	}
+	</script> 
+</head>
+	<body>
+	
+	    <img id="slide" src="" alt="" width="400" height="200">
+	     <script>slid();</script>
+	
+	</body>
+</html>

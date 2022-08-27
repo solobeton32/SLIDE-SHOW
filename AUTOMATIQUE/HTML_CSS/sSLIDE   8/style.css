@@ -1,0 +1,16 @@
+
+
+.container{
+	margin:auto;
+	width:1280px;
+}
+.slideshow{
+	position:absolute;
+	opacity:0;
+	transition:opacity 600ms;
+}
+.slideshow img{
+	height:400px;
+	width:800px;
+}
+	

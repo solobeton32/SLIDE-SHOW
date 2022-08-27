@@ -1,0 +1,56 @@
+            						
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body,html{
+	background: #64d7d6;
+}
+
+.container_slider{
+	position: relative;
+	top: 40px;
+	width: 650px;
+	height: 250px;
+	margin: auto;
+	background: red;
+	overflow: hidden;
+	border: 10px solid #fff; /*une bordure auto de image*/
+	border-radius: 3px;
+}
+
+.container_slider .slider{
+	position: absolute;
+	width: 400%; /*comme c'est 4images on fais a 400%*/
+	height: 100%;
+	display: flex;
+	animation: moverse 10s infinite linear; /*pour animation*/
+}
+
+.container_slider .slider li{
+	position: relative;
+	width: 100%;
+    list-style: none;
+}
+
+.container_slider .slider li img{
+	position: absolute;
+	width: 650px;
+	height: 100%;
+}
+
+@keyframes moverse{
+	0%,20%{
+		margin-left: 0px; /*prima imagine*/
+	}
+	25%,45%{
+		margin-left: -100%; /*seconda imagine*/
+	}
+	50%,70%{
+		margin-left: -200%; /*terza imagine*/
+	}
+	75%,100%{
+		margin-left: -300%; /*quarta imagine*/
+	}
+}

@@ -1,0 +1,68 @@
+
+* {margin: 0; padding: 0;}
+body {background-color: gray;}
+div .slides img {height: 400px; width: 100%;}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+.slides {display: none;} 
+.prev,
+.next {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    padding: 16px;
+    border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    background: rgba(0, 0, 0, .5);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.dot {
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px 0 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #ddd;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.active,
+.dot:hover {
+    background: rgb(42, 192, 104);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>slide</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+         
+	     <div class="container">
+		 
+		   <div class="slideshow">
+		     <img src="abidjan.jpg">
+		   </div>
+		   
+		    <div class="slideshow">
+		     <img src="paris.jpg">
+		   </div>
+		   
+		   <div class="slideshow">
+		     <img src="berlin.jpg">
+		   </div> 
+        </div>	
+
+         <script>
+		 
+		 window.onload=function(){
+		 var slideshow=document.getElementsByClassName("slideshow");
+		 var index=0;
+		 Slideshow();
+		 
+		 function Slideshow(){
+		  for(var i=0; i<slideshow.length; i++){
+		  slideshow[i].style.opacity="0";
+		  }
+		  slideshow[index].style.opacity="1";
+		  index++;
+		  if(index>slideshow.length-1){
+		  index=0;
+		  }
+		  setTimeout(Slideshow, 3000);
+		  }
+		  }
+		  
+		  
+         </script>		 
+    </body>
+</html>
